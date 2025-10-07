@@ -111,7 +111,7 @@ const Hero = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-8 max-w-7xl mx-auto">
+        <div className="flex flex-col gap-8 w-full">
           {/* Row 1 */}
           <div className="flex justify-center gap-6 flex-wrap">
             {integrationIcons.slice(0, 16).map((item, index) => (
