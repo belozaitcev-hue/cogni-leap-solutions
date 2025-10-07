@@ -69,7 +69,7 @@ const integrationIcons = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-subtle">
       {/* Background Image */}
       <div 
         className="absolute inset-0 opacity-30 animate-float"
@@ -81,7 +81,7 @@ const Hero = () => {
       />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 pt-20 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-hero-sm md:text-hero font-medium leading-tight">
             Автоматизация, которая думает за вас.
