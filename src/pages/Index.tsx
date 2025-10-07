@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-['Inter',sans-serif]">
       <Hero />
+      <Integrations />
       <Benefits />
       <UseCases />
-      <Integrations />
       <Process />
       <FinalCTA />
       <Footer />
