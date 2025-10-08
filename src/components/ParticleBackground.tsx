@@ -317,9 +317,10 @@ const ParticleBackground = () => {
     <>
       <canvas 
         ref={canvasRef} 
-        className="fixed top-0 left-0 -z-10 pointer-events-none"
+        className="fixed top-0 left-0 w-full h-full pointer-events-none"
+        style={{ zIndex: 0 }}
       />
-      <div ref={mouseEffectRef} className="mouse-effect pointer-events-none fixed inset-0 opacity-0 transition-opacity duration-300">
+      <div ref={mouseEffectRef} className="mouse-effect pointer-events-none fixed inset-0 opacity-0 transition-opacity duration-300" style={{ zIndex: 1 }}>
         <div className="circle absolute w-8 h-8 rounded-full border-2 border-primary" />
         <div className="circle-follow absolute w-12 h-12 rounded-full border border-primary/30" />
       </div>

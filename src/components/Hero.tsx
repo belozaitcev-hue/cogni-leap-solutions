@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-neural.jpg";
 import ParticleBackground from "./ParticleBackground";
 import icon1c from "@/assets/integrations/1c.png";
 import iconAliexpress from "@/assets/integrations/aliexpress.png";
@@ -73,17 +72,6 @@ const Hero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-subtle">
       {/* Particle Background */}
       <ParticleBackground />
-      
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 opacity-20 animate-float"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: 1,
-        }}
-      />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20 text-center">
