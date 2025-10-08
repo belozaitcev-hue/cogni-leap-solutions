@@ -26,7 +26,7 @@ const steps = [
 
 const Process = () => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 bg-accent-soft/30">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-medium text-center mb-16 animate-fade-in">
           Как мы внедряем AI
@@ -36,7 +36,7 @@ const Process = () => {
           {steps.map((step, index) => (
             <div key={index} className="relative">
               <Card 
-                className="p-6 h-full border-border hover:shadow-soft transition-all duration-300 bg-card"
+                className="p-6 h-full border-0 hover:shadow-soft transition-all duration-300 bg-card"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="text-6xl font-light text-accent-soft mb-4">

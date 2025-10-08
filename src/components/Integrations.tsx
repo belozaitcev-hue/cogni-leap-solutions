@@ -71,7 +71,7 @@ const integrationIcons = [
 
 const Integrations = () => {
   return (
-    <section className="py-24 px-4 bg-background overflow-hidden">
+    <section className="py-24 px-4 bg-accent-soft/30 overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-medium text-center mb-16 animate-fade-in">
           Интеграции с мессенджерами,<br />чатами на сайте и CRM

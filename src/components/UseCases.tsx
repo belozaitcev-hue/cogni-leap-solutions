@@ -47,11 +47,11 @@ const UseCases = () => {
           Примеры автоматизации с нейросетями
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           {useCases.map((useCase, index) => (
             <Card 
               key={index}
-              className="group overflow-hidden hover:shadow-medium transition-all duration-300 border-border cursor-pointer bg-background"
+              className="group overflow-hidden hover:shadow-medium transition-all duration-300 border-0 cursor-pointer bg-background"
               style={{ animationDelay: `${index * 100}ms` }}
               onClick={() => toggleCase(index)}
             >

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import ParticleBackground from "./ParticleBackground";
+import ThreeBackground from "./ThreeBackground";
+import ContactModal from "./ContactModal";
+import { useState } from "react";
 import icon1c from "@/assets/integrations/1c.png";
 import iconAliexpress from "@/assets/integrations/aliexpress.png";
 import iconAmoCRM from "@/assets/integrations/amoCRM.png";
@@ -68,20 +70,22 @@ const integrationIcons = [
 ];
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-subtle">
-      {/* Particle Background */}
-      <ParticleBackground />
+      {/* 3D Background */}
+      <ThreeBackground />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 pt-20 text-center">
+      <div className="relative z-20 container mx-auto px-4 pt-20 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-hero-sm md:text-hero font-medium leading-tight">
-            Автоматизация, которая думает за вас.
+            Автоматизация, которая приносит прибыль
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
-            Мы внедряем нейросети, чтобы бизнес работал быстрее, а люди — умнее.
+            Превращаем рутину в прибыль с помощью искусственного интеллекта
           </p>
           
           <div className="pt-6">
@@ -89,6 +93,7 @@ const Hero = () => {
               variant="hero" 
               size="xl"
               className="animate-slide-up"
+              onClick={() => setIsModalOpen(true)}
             >
               Обсудить проект
             </Button>
@@ -97,10 +102,10 @@ const Hero = () => {
       </div>
 
       {/* Integrations Section */}
-      <div className="relative z-10 w-full px-4 pb-20">
+      <div className="relative z-20 w-full px-4 pb-20" style={{ marginTop: '100px' }}>
         <div className="text-center mb-12">
           <h2 className="text-2xl font-medium animate-fade-in">
-            Доступные интеграции уже сейчас
+            Интеграции доступные уже сейчас
           </h2>
         </div>
 
@@ -135,6 +140,12 @@ const Hero = () => {
       
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      
+      {/* Contact Modal */}
+      <ContactModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
