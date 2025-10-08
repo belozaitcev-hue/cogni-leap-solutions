@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-neural.jpg";
+import ParticleBackground from "./ParticleBackground";
 import icon1c from "@/assets/integrations/1c.png";
 import iconAliexpress from "@/assets/integrations/aliexpress.png";
 import iconAmoCRM from "@/assets/integrations/amoCRM.png";
@@ -70,13 +71,17 @@ const integrationIcons = [
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-subtle">
+      {/* Particle Background */}
+      <ParticleBackground />
+      
       {/* Background Image */}
       <div 
-        className="absolute inset-0 opacity-30 animate-float"
+        className="absolute inset-0 opacity-20 animate-float"
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          zIndex: 1,
         }}
       />
       
