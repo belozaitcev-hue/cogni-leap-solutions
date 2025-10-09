@@ -5,6 +5,7 @@ import UseCases from "@/components/UseCases";
 import Process from "@/components/Process";
 import ROICalculator from "@/components/ROICalculator";
 import Testimonials from "@/components/Testimonials";
+import Founders from "@/components/Founders";
 import FAQ from "@/components/FAQ";
 import QuickStart from "@/components/QuickStart";
 import FinalCTA from "@/components/FinalCTA";
@@ -20,6 +21,7 @@ const Index = () => {
       <Process />
       <ROICalculator />
       <Testimonials />
+      <Founders />
       <FAQ />
       <QuickStart />
       <FinalCTA />

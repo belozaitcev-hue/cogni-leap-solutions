@@ -105,7 +105,7 @@ const Testimonials = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-6 p-6 bg-accent-soft/30 rounded-lg mb-8">
+          <div className="inline-flex items-center gap-6 p-6 bg-accent-soft/30 rounded-lg">
             <div className="text-center">
               <div className="text-3xl font-bold text-accent">4.9</div>
               <div className="flex justify-center mt-1">
@@ -120,13 +120,15 @@ const Testimonials = () => {
             </div>
           </div>
           
-          <Button 
-            size="lg" 
-            className="animate-slide-up"
-            onClick={() => setIsModalOpen(true)}
-          >
-            Получить такой же результат
-          </Button>
+          <div className="mt-8">
+            <Button 
+              size="lg" 
+              className="animate-slide-up"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Получить такой же результат
+            </Button>
+          </div>
         </div>
       </div>
       

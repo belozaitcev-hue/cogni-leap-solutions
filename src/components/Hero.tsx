@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import ThreeBackground from "./ThreeBackground";
 import ContactModal from "./ContactModal";
 import { useState } from "react";
+import BCSLogo from "@/assets/BCS logo.svg";
 import icon1c from "@/assets/integrations/1c.png";
 import iconAliexpress from "@/assets/integrations/aliexpress.png";
 import iconAmoCRM from "@/assets/integrations/amoCRM.png";
@@ -76,6 +77,11 @@ const Hero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-subtle">
       {/* 3D Background */}
       <ThreeBackground />
+      
+      {/* Logo */}
+      <div className="absolute top-16 left-0 z-30">
+        <img src={BCSLogo} alt="BCS Logo" className="h-10" />
+      </div>
       
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 pt-20 text-center">
