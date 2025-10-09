@@ -14,7 +14,7 @@ const SimpleChatBot: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Привет! Я AI-помощник CogniLeap Solutions. Могу рассказать о наших услугах по автоматизации бизнеса с помощью нейросетей. Задайте любой вопрос!',
+      text: 'Привет! Я Дмитрий, AI-помощник. Могу рассказать о наших услугах по автоматизации бизнеса с помощью нейросетей. Задайте любой вопрос!',
       isUser: false,
       timestamp: new Date()
     }
@@ -51,7 +51,7 @@ const SimpleChatBot: React.FC = () => {
     }
     
     if (lowerMessage.includes('привет') || lowerMessage.includes('здравствуйте') || lowerMessage.includes('добрый')) {
-      return 'Привет! Я помощник CogniLeap Solutions. Расскажу о наших услугах по автоматизации бизнеса с помощью нейросетей. Что вас интересует?';
+      return 'Привет! Я Дмитрий, помощник. Расскажу о наших услугах по автоматизации бизнеса с помощью нейросетей. Что вас интересует?';
     }
     
     if (lowerMessage.includes('кейс') || lowerMessage.includes('пример') || lowerMessage.includes('что умеет')) {
@@ -116,7 +116,7 @@ const SimpleChatBot: React.FC = () => {
           <div className="bg-accent text-accent-foreground p-4 rounded-t-lg flex items-center justify-between">
             <div className="flex items-center gap-2">
               <MessageSquare className="w-5 h-5" />
-              <span className="font-medium">AI-Помощник</span>
+              <span className="font-medium">Дмитрий</span>
             </div>
             <div className="flex items-center gap-2">
               <button
