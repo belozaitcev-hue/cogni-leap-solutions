@@ -1,16 +1,36 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4f46b5;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
     </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
   </defs>
   <rect width="1200" height="630" fill="url(#gradient)"/>
-  <text x="600" y="200" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="white" text-anchor="middle">AI Автоматизация бизнеса</text>
-  <text x="600" y="280" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" opacity="0.9">Нейросети для вашей компании</text>
-  <text x="600" y="360" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.8">Внедряем решения для автоматизации</text>
-  <text x="600" y="420" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.8">Оптимизация до 10× быстрее</text>
-  <text x="600" y="480" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.8">ROI через 1 месяц</text>
-  <circle cx="100" cy="100" r="50" fill="#3b82f6"/>
-  <text x="100" y="110" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">BCS</text>
+  
+  <!-- BCS Logo -->
+  <circle cx="120" cy="120" r="60" fill="#ffffff" opacity="0.2"/>
+  <circle cx="120" cy="120" r="45" fill="#ffffff"/>
+  <text x="120" y="135" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e40af" text-anchor="middle">BCS</text>
+  
+  <!-- Main Title -->
+  <text x="600" y="180" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle" filter="url(#shadow)">AI Автоматизация</text>
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle" filter="url(#shadow)">бизнеса</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle" opacity="0.95">Нейросети для вашей компании</text>
+  
+  <!-- Benefits -->
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.9">⚡ Оптимизация до 10× быстрее</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.9">💰 ROI через 1 месяц</text>
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.9">🚀 Внедрение за 30 дней</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="3" fill="white" opacity="0.6"/>
+  <circle cx="1100" cy="200" r="2" fill="white" opacity="0.4"/>
+  <circle cx="1000" cy="250" r="4" fill="white" opacity="0.5"/>
+  <circle cx="1080" cy="300" r="2" fill="white" opacity="0.3"/>
 </svg>
